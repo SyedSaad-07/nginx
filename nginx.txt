@@ -1,0 +1,50 @@
+NGINX is a high performance web server.
+-- Piece of software on a server, that handles HTTP requests.
+
+-------
+-- NGINX can act as a load balancer.
+
+1) Distributes incoming traffic across multiple backend servers.
+2) To balance the load, improve performance and provide redundancy.
+
+--- Some load balancing methods: 
+1) Least Connections:
+    Routes traffic to the server with the fewest active connections.
+2) Round Robin:
+    Distributes client requests in a sequential, cyclical manner to each server in the group.
+
+--- Caching is a core feature of NGINX Proxy.
+
+1) Caches responses from backend server for freqently accessd resources.
+2) Copies are stored temporarily to improve the performance.
+
+--- Secuirty
+
+* Only one server that is publicly available *
+1) Consolidated Secuirty.
+2) Minimized Exposure
+3) Centralized Access Control
+4) Centralized Logging and Monitoring
+
+Using NGINX Proxy significantly Reduces attack surface.
+
+* NGINX can handle SSL/TLS encryption and decryption.
+* If attracker intercepts message, they can't read it.
+
+# Accept encrypted traffic.
+# Deny non encrypted requests.
+
+--- NGINX Proxy can compress the response.
+    * To reduce bandwidth usage and improve load times.
+
+Segmentation - Sending response in chunks.
+
+# Nginx as a K8s ingress Controller
+A specialized load balancer for managing ingress ( incoming ) traffic in Kubernetes.
+
+#Docker
+1) Docker Image = Standalone, executable package that includes everything needed to run the application.
+2) It's a snapshot of an environment that can be used to create and run containers.
+
+# Docker-Compose
+) Tool to simplify the process of defining and running multiple containers.
